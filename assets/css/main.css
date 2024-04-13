@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&family=Tilt+Neon&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,500,700");
 * {
@@ -1290,7 +1291,10 @@ header #slider-home .btn:hover {
   padding: 60px 0;
   min-height: 100vh;
 }
-.we-offer-area a, .we-offer-area a:hover, .we-offer-area a:focus, .we-offer-area a:active {
+.we-offer-area a,
+.we-offer-area a:hover,
+.we-offer-area a:focus,
+.we-offer-area a:active {
   text-decoration: none;
   outline: none;
 }
@@ -1518,4 +1522,188 @@ header #slider-home .btn:hover {
   position: absolute;
   top: -10px;
   width: 120px;
+}
+
+.wrraper-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #f5f5f5;
+}
+.wrraper-main .wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.wrraper-main .card {
+  position: relative;
+  width: 325px;
+  height: 450px;
+  background: #000;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.wrraper-main .poster {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.wrraper-main .poster::before {
+  content: "";
+  position: absolute;
+  bottom: -45%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: 0.3s;
+}
+.wrraper-main .card:hover .poster::before {
+  bottom: 0;
+}
+.wrraper-main .poster img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.3s;
+}
+.wrraper-main .card:hover .poster img {
+  transform: scale(1.1);
+}
+.wrraper-main .details {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: auto;
+  padding: 1.5em 1.5em 2em;
+  background: rgba(0, 0, 0, 0.6666666667);
+  -webkit-backdrop-filter: blur(16px) saturate(120%);
+          backdrop-filter: blur(16px) saturate(120%);
+  transition: 0.3s;
+  color: #fff;
+  z-index: 2;
+}
+.wrraper-main .card:hover .details {
+  bottom: 0;
+}
+.wrraper-main .details h1,
+.wrraper-main .details h2 {
+  font-weight: 700;
+}
+.wrraper-main .details h1 {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+.wrraper-main .details h2 {
+  font-weight: 400;
+  font-size: 1em;
+  margin-bottom: 10px;
+  opacity: 0.6;
+}
+.wrraper-main .details .rating {
+  position: relative;
+  margin-bottom: 15px;
+  display: flex;
+  gap: 0.25em;
+}
+.wrraper-main .details .rating i {
+  color: #e3c414;
+}
+.wrraper-main .details .rating span {
+  margin-left: 0.25em;
+}
+.wrraper-main .details .tags {
+  display: flex;
+  gap: 0.375em;
+  margin-bottom: 0.875em;
+  font-size: 0.85em;
+}
+.wrraper-main .details .tags span {
+  padding: 0.35rem 0.65rem;
+  color: #fff;
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  border-radius: 4px;
+  border-radius: 50px;
+}
+.wrraper-main .details .desc {
+  color: #fff;
+  opacity: 0.8;
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
+.wrraper-main .details .cast h3 {
+  margin-bottom: 0.5em;
+}
+.wrraper-main .details .cast ul {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+  width: 100%;
+}
+.wrraper-main .details .cast ul li {
+  list-style: none;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1.5px solid #fff;
+}
+.wrraper-main .details .cast ul li img {
+  width: 100%;
+  height: 100%;
+}
+
+.writing-animation {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0 auto;
+  background-color: #191a1e;
+  color: white;
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.writing-animation #slider {
+  width: 600px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+.writing-animation #sliderValue {
+  display: flex;
+  color: #0077ee;
+  font-weight: 700;
+}
+.writing-animation .start {
+  opacity: 0;
+}
+.writing-animation .animation {
+  animation: fade 0.3s forwards;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }/*# sourceMappingURL=main.css.map */
