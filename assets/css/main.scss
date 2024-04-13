@@ -377,12 +377,18 @@ header {
         #cssmenu ul {
             width: 100%;
             display: none;
+
         }
 
         #cssmenu ul li {
             width: 100%;
             border-top: 1px solid #444;
             float: left;
+            margin-top: 0.7rem;
+            &:hover{
+                background: radial-gradient(circle, rgb(67, 69, 112) 3%, rgb(35, 36, 57) 60%) !important;
+
+            }
         }
 
         #cssmenu ul li:hover {
