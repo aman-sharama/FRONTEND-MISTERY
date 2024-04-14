@@ -133,7 +133,7 @@ header {
     /*-----------header-menu------------*/
     nav#cssmenu ul {
         float: right;
-        margin-top: 13px;
+        margin-top: 16px;
     }
 
     .logo {
@@ -1504,8 +1504,15 @@ header {
 
 @media only screen and (min-width:320px) and (max-width:576px) {
     .card-container {
+        .slider{
+            .container{
+                padding: 0px;
+                margin: 0px;
+            }
+        }
         .card {
             margin: 1rem;
+
         }
 
         padding: 0;
@@ -2137,7 +2144,7 @@ header {
     // height: 20vh;
     font-family: 'Ubuntu', sans-serif;
     margin: 0 auto;
-    background-color: #191a1e;
+    background-color: #191a1e;  
     color: white;
     min-height: 10vh;
     display: flex;
