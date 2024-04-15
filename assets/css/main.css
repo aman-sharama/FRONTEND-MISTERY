@@ -534,7 +534,8 @@ header #slider-home .btn:hover {
 
 .footer-logo img {
   max-width: 200px;
-  mix-blend-mode: multiply !important; /* Specify the blend mode */
+  mix-blend-mode: multiply !important;
+  /* Specify the blend mode */
 }
 
 .footer-text p {
@@ -993,13 +994,20 @@ header #slider-home .btn:hover {
   color: rgba(0, 0, 0, 0.611);
   margin: auto 10px;
   text-align: center;
-  font-size: 1rem;
+  font-size: 18px;
   font-weight: 400;
 }
 .card-container .btn_main {
   display: flex;
   justify-content: center;
   padding: 10px 10px 0px 10px;
+}
+.card-container .btn_main a {
+  color: white;
+  text-decoration: none;
+}
+.card-container .btn_main a:hover {
+  color: black;
 }
 .card-container .btn {
   display: flex;
@@ -1789,4 +1797,46 @@ header #slider-home .btn:hover {
 }
 .owl-dots .owl-dot.active {
   background: #f44336 !important;
+}
+
+.htmlpage_main_heading {
+  border: 1px solid black;
+  font-family: "Tilt Neon", sans-serif;
+  background: linear-gradient(109.6deg, rgb(204, 228, 247) 11.2%, rgb(237, 246, 250) 100.2%);
+}
+
+.htmlpage_section_1 {
+  font-family: "Tilt Neon", sans-serif;
+  border: 1px solid black;
+}
+.htmlpage_section_1 .list_column {
+  padding-top: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  max-height: 100vh;
+  overflow-y: scroll;
+}
+.htmlpage_section_1 .list_column a {
+  color: black;
+}
+.htmlpage_section_1 .list_column .html_tut {
+  text-align: center;
+}
+.htmlpage_section_1 .list_column ul li {
+  font-size: 20px;
+  margin: 1rem auto;
+}
+.htmlpage_section_1 .definition_column {
+  padding-top: 2rem;
+}
+.htmlpage_section_1 .definition_column ul li {
+  font-size: 20px;
+}
+.htmlpage_section_1 .definition_column .html_para {
+  font-size: 20px;
+}
+.htmlpage_section_1 .definition_column .html_para ul li {
+  font-size: 20px;
+}
+.htmlpage_section_1 .definition_column .html_heading {
+  margin: 1rem auto;
 }/*# sourceMappingURL=main.css.map */
