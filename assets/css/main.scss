@@ -2276,27 +2276,33 @@ header {
 
 // html page css strart here  
 .htmlpage_main_heading {
-
+    // position: relative;
     border: 1px solid black;
     font-family: "Tilt Neon", sans-serif;
-
     background: linear-gradient(109.6deg, rgb(204, 228, 247) 11.2%, rgb(237, 246, 250) 100.2%);
+
 }
 
 .htmlpage_section_1 {
-   
+    position: relative;
+    background: linear-gradient(109.6deg, rgb(204, 228, 247) 11.2%, rgb(237, 246, 250) 100.2%);
     font-family: "Tilt Neon", sans-serif;
     border: 1px solid black;
 
     .list_column {
-        a{
+        position: sticky;
+        top: 0px;
+
+        a {
             color: black;
         }
+
         padding-top: 1rem;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         max-height: 100vh;
         overflow-y: scroll;
-        .html_tut{
+
+        .html_tut {
             text-align: center;
         }
 
@@ -2309,29 +2315,49 @@ header {
 
     }
 
-    .definition_column{
+    .definition_column {
         padding-top: 2rem;
-        ul{
-            li{
+
+        ul {
+            li {
                 font-size: 20px;
             }
         }
-       .html_element{
-       
-       }
-        .html_para{
+
+        .html_element {}
+
+        .html_para {
             font-size: 20px;
-            ul{
-                li{
+
+            ul {
+                li {
                     font-size: 20px;
                 }
             }
         }
-        .html_heading{
-           
+
+        .html_heading {
+
             margin: 1rem auto;
         }
-        
-        
+        .html_image{
+            .html_immage_example_main{
+                ul{
+                    display: flex;
+                    justify-content: center;
+                    list-style: none;
+                    flex-wrap: wrap;
+                    li{
+                        img{
+                            object-fit: cover;
+                            width: 200px;
+                            height: 200px;
+                        }
+                    }
+                }
+            }
+        }
+
+
     }
 }
