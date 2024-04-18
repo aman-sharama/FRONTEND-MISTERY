@@ -1855,4 +1855,21 @@ header #slider-home .btn:hover {
      object-fit: cover;
   width: 200px;
   height: 200px;
+}
+
+.css_page_first_sec {
+  border: 1px solid black;
+  font-family: "Tilt Neon", sans-serif;
+  display: flex;
+  background-image: url("/assets/images/cssbg.jpg");
+  z-index: 1;
+}
+
+.first_sec_main_heading {
+  border: 2px solid red;
+  padding: 10px;
+}
+
+.first_sec_main_heading h1 {
+  font-size: 4rem;
 }/*# sourceMappingURL=main.css.map */
