@@ -2324,7 +2324,7 @@ header {
             }
         }
 
-        .html_element {}
+
 
         .html_para {
             font-size: 20px;
@@ -2365,102 +2365,147 @@ header {
 }
 
 // CSS PAGE STYLING START  
-.css_page_first_sec {
-    color: white;
-    border: 1px solid black;
+.css-page-first-sec {
     font-family: "Tilt Neon", sans-serif;
-
-
-    background: rgb(6, 158, 237);
-    background: radial-gradient(circle, rgba(6, 158, 237, 1) 0%, rgba(6, 122, 239, 1) 31%, rgba(6, 114, 239, 1) 100%);
+    padding: 5px;
+    background-image: linear-gradient(to top, #d16ba5, #ca78b9, #c084ca, #b491d9, #a79de4, #97aaf1, #86b6fa, #75c2ff, #5ad2ff, #45e1ff, #46effd, #5ffbf1);
 }
 
-.first_sec_main_heading {
-
-    // border: 2px solid red;
-    padding: 10px;
-    font-family: "Tilt Neon", sans-serif;
-}
-
-
-.first_sec_main_heading h1 {
-    font-size: 4rem;
-    font-family: "Tilt Neon", sans-serif;
-}
-.css_page_main_content{
+.css-page-main-reading-sec {
     font-family: "Tilt Neon", sans-serif;
 
-    .css_main_content_leftside{
-        // border: 1px solid black;
-        max-height: 100vh;
-        overflow-y: scroll;
+    .main-reading-sec-left {
+        background: #ececec;
         position: sticky;
         top: 0px;
-        
-        ul{
-            padding: 1rem;
-            li{
-                list-style-type: none;
-                font-size: 18px;
-                margin: 1rem auto;
-            }
+        padding-top: 1rem;
+       
+        max-height: 100vh;
+        overflow-y: scroll;
+        border-right: 2px solid black;
+        a{
+            text-decoration: none;
+            color: black;
         }
 
-    }
-    .css_main_content_rightside{
-        // border: 1px solid black;
-        .css_heading{
-           
-            padding-left: 1rem;
-            padding-top: 1rem;
+        h4 {
+            margin: 5px auto;
         }
-        ul{
-            
-            padding: 0;
-            list-style-type: none;
-            li{
-                margin: 1rem ;
-                font-size: 20px;
-                button{
-                    border: 1px solid black;
-                    padding: 10px 1.5rem;
-                    font-size: 20px;
+
+        ul {
+            li {
+                margin: 10px auto;
+                font-size: 18px;
+                font-weight: 500;
+                &:hover{
+                    background-color: lightgrey;
                 }
-                
             }
         }
-        .css_tutorial2{
-            margin-top: 3rem;
-            // margin-bottom: 5rem;
-            // border: 1px solid black;
-            .css_example_main{
-                
+    }
+    .main-reading-sec-right{
+        padding: 1rem  0rem;
+        hr{
+            background-color: black;
+            margin: 1rem;
+        }
+        .css-normal-text{
+            font-size: 18px;
+            margin-left: 3rem;
+            
+        }
+        ul{    
+            list-style-type: none;
+            padding: 0.5rem  2rem 0.5rem 2rem;
+            li{
+                margin: 1rem;
+                font-size: 18px;
+            }
+        }
+        .small-heading{
+            margin: 1rem 3rem;
+            font-size: 30px;
+        }
+        .subtitle-heading{
+        margin: 5px  auto 10px auto ;   
+        }
+        .main-topic-heading{
+            font-size: 2.5rem;
+            font-weight: 500;
+            margin: 1rem auto 1rem 3rem;
+        }
+        .css-main-code-area{
+            margin: 1rem auto;
+            border-radius: 1rem;
+            padding: 1rem 2rem ;
+            background: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+            .main-code{
                 border: 1px solid black;
-                border-radius: 1.2rem;
-                padding: 1rem ;
-               
-                button{
-                    margin-top: 2rem;
-                    padding: 0.5rem 2rem;
-                    border: 1px solid black;
-                    border-radius: 10px;
-                }
-           
-                .css_example_code{
-                    background: rgb(6, 158, 237);
-                    background: radial-gradient(circle, rgba(6, 158, 237, 1) 0%, rgba(6, 122, 239, 1) 31%, rgba(6, 114, 239, 1) 100%);
-                   border: 1px solid white;
-                   border-radius: 1rem;
-                    font-size: 12px;
-                  
-                   
-                    code{
-                        // border: 1px solid black;
-                        color:white
+                word-spacing: 10px;
+                font-weight: 500;
+                color: white;
+                background: #222831;
+                border-radius: 5px;
+                ul{
+                    li{
+                        font-size: 17px;
+                        margin: 5px;
                     }
-                 
-                    
                 }
+            }
+            .code-area-btn{
+                button{
+                    margin: 1.5rem auto ;
+                    padding: 10px 1rem;
+                }
+            }
+        }
+        .css-home-main{
+           
+            button{
+                padding: 10px;
+            }
+            .css-home-main-ul{
+               
+                background-color: lightgrey;
+            }
+            
+          
+        }
+        .css-intro-main{
+            h3{
+                margin: 1rem auto 10px 3rem;
+            }
+            // ul{
+            //     background-color: lightgrey;
+            //     list-style:circle;
+            // }
+        }
+        .css-syntax-main{
+            .color-changing{
+                background-color: yellow;
+                color: red;
+            }
+        }
+        .css-selector-main {
+            .css-selector-ul{
+
+            
+            list-style-type: disc;
+            background-color: lightgrey;
+
+        }
+        }
+        .css-how-to-main{
+            .add-css{
+                li{
+                    list-style-type: disc;
+                }
+            }
+        }
+        .css-comment-content{
+            .css-comment{
+                color: grey;
             }
         }
     }
