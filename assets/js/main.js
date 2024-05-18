@@ -29,7 +29,7 @@ $(document).ready(function(){
 
 
 
-  
+//   writing animation 
   // Tutorial: https://youtu.be/Wxnpze5LK3Y
 
   var sliderCounter = 0;

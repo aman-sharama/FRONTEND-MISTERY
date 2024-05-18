@@ -1857,79 +1857,112 @@ header #slider-home .btn:hover {
   height: 200px;
 }
 
-.css_page_first_sec {
-  color: white;
-  border: 1px solid black;
+.css-page-first-sec {
   font-family: "Tilt Neon", sans-serif;
-  background: rgb(6, 158, 237);
-  background: radial-gradient(circle, rgb(6, 158, 237) 0%, rgb(6, 122, 239) 31%, rgb(6, 114, 239) 100%);
+  padding: 5px;
+  background-image: linear-gradient(to top, #d16ba5, #ca78b9, #c084ca, #b491d9, #a79de4, #97aaf1, #86b6fa, #75c2ff, #5ad2ff, #45e1ff, #46effd, #5ffbf1);
 }
 
-.first_sec_main_heading {
-  padding: 10px;
+.css-page-main-reading-sec {
   font-family: "Tilt Neon", sans-serif;
 }
-
-.first_sec_main_heading h1 {
-  font-size: 4rem;
-  font-family: "Tilt Neon", sans-serif;
-}
-
-.css_page_main_content {
-  font-family: "Tilt Neon", sans-serif;
-}
-.css_page_main_content .css_main_content_leftside {
-  max-height: 100vh;
-  overflow-y: scroll;
+.css-page-main-reading-sec .main-reading-sec-left {
+  background: #ececec;
   position: sticky;
   top: 0px;
-}
-.css_page_main_content .css_main_content_leftside ul {
-  padding: 1rem;
-}
-.css_page_main_content .css_main_content_leftside ul li {
-  list-style-type: none;
-  font-size: 18px;
-  margin: 1rem auto;
-}
-.css_page_main_content .css_main_content_rightside .css_heading {
-  padding-left: 1rem;
   padding-top: 1rem;
+  max-height: 100vh;
+  overflow-y: scroll;
+  border-right: 2px solid black;
 }
-.css_page_main_content .css_main_content_rightside ul {
-  padding: 0;
-  list-style-type: none;
+.css-page-main-reading-sec .main-reading-sec-left a {
+  text-decoration: none;
+  color: black;
 }
-.css_page_main_content .css_main_content_rightside ul li {
+.css-page-main-reading-sec .main-reading-sec-left h4 {
+  margin: 5px auto;
+}
+.css-page-main-reading-sec .main-reading-sec-left ul li {
+  margin: 10px auto;
+  font-size: 18px;
+  font-weight: 500;
+}
+.css-page-main-reading-sec .main-reading-sec-left ul li:hover {
+  background-color: lightgrey;
+}
+.css-page-main-reading-sec .main-reading-sec-right {
+  padding: 1rem 0rem;
+}
+.css-page-main-reading-sec .main-reading-sec-right hr {
+  background-color: black;
   margin: 1rem;
-  font-size: 20px;
 }
-.css_page_main_content .css_main_content_rightside ul li button {
-  border: 1px solid black;
-  padding: 10px 1.5rem;
-  font-size: 20px;
+.css-page-main-reading-sec .main-reading-sec-right .css-normal-text {
+  font-size: 18px;
+  margin-left: 3rem;
 }
-.css_page_main_content .css_main_content_rightside .css_tutorial2 {
-  margin-top: 3rem;
+.css-page-main-reading-sec .main-reading-sec-right ul {
+  list-style-type: none;
+  padding: 0.5rem 2rem 0.5rem 2rem;
 }
-.css_page_main_content .css_main_content_rightside .css_tutorial2 .css_example_main {
-  border: 1px solid black;
-  border-radius: 1.2rem;
-  padding: 1rem;
+.css-page-main-reading-sec .main-reading-sec-right ul li {
+  margin: 1rem;
+  font-size: 18px;
 }
-.css_page_main_content .css_main_content_rightside .css_tutorial2 .css_example_main button {
-  margin-top: 2rem;
-  padding: 0.5rem 2rem;
-  border: 1px solid black;
-  border-radius: 10px;
+.css-page-main-reading-sec .main-reading-sec-right .small-heading {
+  margin: 1rem 3rem;
+  font-size: 30px;
 }
-.css_page_main_content .css_main_content_rightside .css_tutorial2 .css_example_main .css_example_code {
-  background: rgb(6, 158, 237);
-  background: radial-gradient(circle, rgb(6, 158, 237) 0%, rgb(6, 122, 239) 31%, rgb(6, 114, 239) 100%);
-  border: 1px solid white;
+.css-page-main-reading-sec .main-reading-sec-right .subtitle-heading {
+  margin: 5px auto 10px auto;
+}
+.css-page-main-reading-sec .main-reading-sec-right .main-topic-heading {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin: 1rem auto 1rem 3rem;
+}
+.css-page-main-reading-sec .main-reading-sec-right .css-main-code-area {
+  margin: 1rem auto;
   border-radius: 1rem;
-  font-size: 12px;
+  padding: 1rem 2rem;
+  background: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
 }
-.css_page_main_content .css_main_content_rightside .css_tutorial2 .css_example_main .css_example_code code {
+.css-page-main-reading-sec .main-reading-sec-right .css-main-code-area .main-code {
+  border: 1px solid black;
+  word-spacing: 10px;
+  font-weight: 500;
   color: white;
+  background: #222831;
+  border-radius: 5px;
+}
+.css-page-main-reading-sec .main-reading-sec-right .css-main-code-area .main-code ul li {
+  font-size: 17px;
+  margin: 5px;
+}
+.css-page-main-reading-sec .main-reading-sec-right .css-main-code-area .code-area-btn button {
+  margin: 1.5rem auto;
+  padding: 10px 1rem;
+}
+.css-page-main-reading-sec .main-reading-sec-right .css-home-main button {
+  padding: 10px;
+}
+.css-page-main-reading-sec .main-reading-sec-right .css-home-main .css-home-main-ul {
+  background-color: lightgrey;
+}
+.css-page-main-reading-sec .main-reading-sec-right .css-intro-main h3 {
+  margin: 1rem auto 10px 3rem;
+}
+.css-page-main-reading-sec .main-reading-sec-right .css-syntax-main .color-changing {
+  background-color: yellow;
+  color: red;
+}
+.css-page-main-reading-sec .main-reading-sec-right .css-selector-main .css-selector-ul {
+  list-style-type: disc;
+  background-color: lightgrey;
+}
+.css-page-main-reading-sec .main-reading-sec-right .css-how-to-main .add-css li {
+  list-style-type: disc;
+}
+.css-page-main-reading-sec .main-reading-sec-right .css-comment-content .css-comment {
+  color: grey;
 }/*# sourceMappingURL=main.css.map */
